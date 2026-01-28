@@ -910,5 +910,67 @@ window.addEventListener('load', function() {
     if (window.particles && !window.particles.started) {
         window.particles.animate();
         window.particles.started = true;
+
+        .reviews-section {
+  padding: 80px 10%;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+}
+
+.reviews-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00f7ff;
+}
+
+.review-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.review-form input,
+.review-form textarea {
+  padding: 12px;
+  background: transparent;
+  border: 1px solid #00f7ff;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.review-form button {
+  padding: 12px;
+  background: #00f7ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.review-list {
+  margin-top: 40px;
+}
+
+.review-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 3px solid #00f7ff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  animation: fadeUp 0.6s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
     }
 });
